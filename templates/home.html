@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+    </head>
+    <body>
+        <h1>File List</h1>
+        <ol>
+        {% if files %}
+            {% for fileName in files %}
+                <li><a href="{{fileName}}">{{ fileName }}</a></li>
+            {% endfor %}
+        {% endif %}
+        </ol>
+    </body>
+</html>
